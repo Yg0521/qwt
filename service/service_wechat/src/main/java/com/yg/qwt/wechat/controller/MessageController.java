@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.io.InputStream;
 import java.util.Arrays;
@@ -29,7 +30,8 @@ import java.util.Map;
 public class MessageController {
 
     private static final String token = "xxqwt";
-    @Autowired
+
+    @Resource
     private MessageService messageService;
 
     /**

@@ -5,13 +5,14 @@ import com.yg.qwt.model.vod.Course;
 import com.yg.qwt.wechat.service.MessageService;
 import me.chanjar.weixin.mp.api.WxMpService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
-
+@Service
 public class MessageServiceImpl implements MessageService {
 
     @Autowired
